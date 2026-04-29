@@ -2,7 +2,7 @@
 
 Personal portfolio website built with HTML, CSS, and JavaScript (Vite). Showcases data analytics projects, work experience, and technical skills.
 
-**Live site:** https://adig27.github.io/Responsive-Portfolio-Aditya
+**Live site:** https://adij27.github.io/Responsive-Portfolio-Aditya
 
 ---
 
