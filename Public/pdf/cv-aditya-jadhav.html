@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Jadhav — CV</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 11px; line-height: 1.5;
+    color: #1a1a2e; background: #ffffff;
+  }
+  .page { width: 100%; max-width: 8.5in; margin: 0 auto; padding: 0.6in; }
+
+  /* HEADER */
+  .header { margin-bottom: 16px; }
+  .header h1 { font-size: 24px; font-weight: 700; color: #1a1a2e; letter-spacing: -0.02em; margin-bottom: 4px; }
+  .header-gradient { height: 2px; background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%)); border-radius: 1px; margin-bottom: 8px; }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 10px; color: #555; }
+  .contact-row a { color: #555; text-decoration: none; }
+  .contact-row .separator { color: #ccc; }
+
+  /* SECTIONS */
+  .section { margin-bottom: 14px; }
+  .section-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: hsl(187, 74%, 32%); border-bottom: 1px solid #e5e5e5; padding-bottom: 3px; margin-bottom: 8px; }
+  .summary-text { font-size: 11px; line-height: 1.6; color: #333; }
+  a { white-space: nowrap; }
+
+  /* COMPETENCIES */
+  .competencies-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+  .competency-tag { font-size: 10px; font-weight: 500; color: hsl(187, 74%, 28%); background: hsl(187, 40%, 95%); padding: 3px 10px; border-radius: 3px; border: 1px solid hsl(187, 40%, 88%); }
+
+  /* EXPERIENCE */
+  .job { margin-bottom: 12px; }
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+  .job-company { font-size: 12px; font-weight: 700; color: hsl(270, 70%, 45%); }
+  .job-period { font-size: 10px; color: #777; white-space: nowrap; }
+  .job-role { font-size: 11px; font-weight: 500; color: #444; margin-bottom: 4px; }
+  .job ul { padding-left: 16px; margin-top: 4px; }
+  .job li { font-size: 10.5px; line-height: 1.5; color: #333; margin-bottom: 2px; }
+  .job li strong { font-weight: 600; }
+
+  /* PROJECTS */
+  .project { margin-bottom: 10px; }
+  .project-title { font-size: 11px; font-weight: 700; color: hsl(270, 70%, 45%); }
+  .project-badge { font-size: 9px; font-weight: 500; color: hsl(187, 74%, 32%); background: hsl(187, 40%, 95%); padding: 1px 6px; border-radius: 2px; margin-left: 6px; }
+  .project-desc { font-size: 10.5px; color: #444; margin-top: 2px; line-height: 1.5; }
+
+  /* EDUCATION */
+  .edu-item { margin-bottom: 6px; }
+  .edu-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .edu-title { font-weight: 600; font-size: 11px; color: #333; }
+  .edu-org { color: hsl(270, 70%, 45%); font-weight: 500; }
+  .edu-year { font-size: 10px; color: #777; }
+  .edu-desc { font-size: 10px; color: #666; }
+
+  /* SKILLS */
+  .skills-row { margin-bottom: 4px; font-size: 10.5px; color: #444; }
+  .skill-category { font-weight: 600; color: #333; }
+
+  @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+  .avoid-break { break-inside: avoid; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Aditya Jadhav</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>aditya27@nmsu.edu</span>
+      <span class="separator">|</span>
+      <span>575-621-3125</span>
+      <span class="separator">|</span>
+      <a href="https://linkedin.com/in/aditya-jadhav-547b58197">linkedin.com/in/aditya-jadhav-547b58197</a>
+      <span class="separator">|</span>
+      <a href="https://github.com/adig27">github.com/adij27</a>
+      <span class="separator">|</span>
+      <span>Las Cruces, NM </span>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">
+      Data Analyst with 2+ years of experience building end-to-end analytics pipelines, defining KPIs, and translating complex datasets into actionable insights for cross-functional teams. At Olam Food Ingredients, standardized 10+ KPIs and reduced report prep time 30% through automated Python/Tableau dashboards. At Infosys, optimized SQL workflows reducing data processing time 25% across enterprise systems. Built a production dbt pipeline on BigQuery (61.7M rows, star schema, 16 data quality tests) with a live Looker Studio dashboard. Strong SQL, Python, and data modeling skills. M.S. Data Analytics, GPA 4.0 (expected Dec 2026).
+    </div>
+  </div>
+
+  <!-- COMPETENCIES -->
+  <div class="section">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Advanced SQL Analytics</span>
+      <span class="competency-tag">Python &amp; Pandas</span>
+      <span class="competency-tag">ETL Pipeline Design</span>
+      <span class="competency-tag">Dimensional Modeling &amp; dbt</span>
+      <span class="competency-tag">BigQuery &amp; Cloud Data Warehousing</span>
+      <span class="competency-tag">Tableau &amp; BI Dashboard Development</span>
+      <span class="competency-tag">KPI Definition &amp; Standardization</span>
+      <span class="competency-tag">Statistical Analysis &amp; Root Cause</span>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="job avoid-break">
+      <div class="job-header">
+        <span class="job-company">Olam Food Ingredients</span>
+        <span class="job-period">May – Aug 2025</span>
+      </div>
+      <div class="job-role">Data Analyst Intern — Las Cruces, NM</div>
+      <ul>
+        <li><strong>Defined and standardized 10+ KPIs</strong> for supply chain and production reporting — building Python/Tableau dashboards used weekly by engineering and operations leadership, reducing report prep time 30% and establishing a single source of truth for operational metrics.</li>
+        <li>Conducted quantitative root cause analysis across production datasets, identifying 3 key process bottlenecks and driving a measured 2.5–3% yield improvement; delivered findings through clear data visualizations to cross-functional leadership.</li>
+        <li>Designed ETL workflows to ingest, clean, and transform raw manufacturing data; built relational data models supporting downstream BI and analytics workflows across multiple stakeholder teams.</li>
+      </ul>
+    </div>
+
+    <div class="job avoid-break">
+      <div class="job-header">
+        <span class="job-company">New Mexico State University</span>
+        <span class="job-period">Aug 2024 – Present</span>
+      </div>
+      <div class="job-role">Graduate Research &amp; Teaching Assistant</div>
+      <ul>
+        <li><strong>Analyzed program-outcome and engagement datasets</strong> to support institutional reporting and faculty decision-making — standardizing metric definitions across K-12 and community education cohorts; built automated reporting tools improving tracking accuracy by 25%.</li>
+        <li>Conducting applied ML research on behavioral pattern detection using classification models (Python, scikit-learn, Pandas); delivering findings as data visualizations and written reports to cross-functional research stakeholders.</li>
+      </ul>
+    </div>
+
+    <div class="job avoid-break">
+      <div class="job-header">
+        <span class="job-company">Infosys Pvt. Ltd.</span>
+        <span class="job-period">Jun 2022 – Aug 2024</span>
+      </div>
+      <div class="job-role">Systems Engineer — India</div>
+      <ul>
+        <li><strong>Optimized SQL production workflows</strong> via advanced query refactoring and indexing — reducing data processing time by 25% and improving downstream reporting speed for a 20-person cross-functional team.</li>
+        <li>Built Python/Bash automation scripts eliminating 10+ hours of weekly manual effort; maintained enterprise data systems at 99%+ uptime supporting large-scale transactional data flows.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section avoid-break">
+    <div class="section-title">Projects</div>
+
+    <div class="project">
+      <span class="project-title">NYC Citi Bike Analytics Pipeline</span>  
+      <span class="project-badge">BigQuery · dbt · Looker Studio · SQL · Python</span> <a href="https://github.com/adij27/transit-analytics-pipeline">github.com/adij27/transit-analytics-pipeline</a>
+      <div class="project-desc">Production dbt pipeline on BigQuery transforming 61.7M raw trip records into a partitioned star schema (staging view → dim_stations → fct_trips). Implemented 16 data quality tests, auto-generated dbt documentation with lineage graph, and a Looker Studio dashboard tracking ridership trends, retention by user type, and peak-hour patterns.</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Supply Chain KPI Dashboard</span>
+      <span class="project-badge">Python · Pandas · Tableau · SQL · ETL</span>
+      <div class="project-desc">End-to-end analytics pipeline ingesting production and logistics data into interactive Tableau dashboards tracking throughput, yield, and defect rates across 10+ standardized KPIs. Insights directly informed process improvements at Olam Food Ingredients.</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Text Summarization API</span>
+      <span class="project-badge">FastAPI · Hugging Face Transformers · Python</span>
+      <div class="project-desc">Production REST API for real-time text summarization using Pegasus/BART models; optimized model inference latency by 20% via batching and caching.</div>
+    </div>
+
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section avoid-break">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">M.S. Data Analytics — <span class="edu-org">New Mexico State University</span></span>
+        <span class="edu-year">Expected Dec 2026</span>
+      </div>
+      <div class="edu-desc">GPA 4.0 · Coursework: statistical modeling, machine learning, data visualization, database systems</div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">B.E. Mechanical Engineering — <span class="edu-org">Shivaji University, India</span></span>
+        <span class="edu-year">Sep 2021</span>
+      </div>
+      <div class="edu-desc">GPA 3.5</div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section avoid-break">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-row">
+      <span class="skill-category">Languages:</span> SQL (advanced — CTEs, window functions, query optimization), Python, R, Bash
+    </div>
+    <div class="skills-row">
+      <span class="skill-category">Analytics &amp; BI:</span> Tableau, Power BI (DAX), Looker Studio , Pandas, NumPy, Seaborn, Matplotlib, Jupyter, Excel (advanced)
+    </div>
+    <div class="skills-row">
+      <span class="skill-category">Data Engineering:</span> BigQuery , dbt , dimensional modeling (star schema, fact/dimension tables, partitioning), ETL pipeline design, Airbyte , data quality testing, data governance
+    </div>
+    <div class="skills-row">
+      <span class="skill-category">Methods:</span> KPI definition &amp; standardization, statistical analysis, A/B testing, cohort analysis, root cause analysis, classification models, forecasting
+    </div>
+    <div class="skills-row">
+      <span class="skill-category">Tools:</span> Git/GitHub, VS Code, Linux, FastAPI, Google Sheets
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

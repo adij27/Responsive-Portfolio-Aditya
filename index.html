@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link rel="stylesheet" href="/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.png" type="image/png">
 
     <!-- Remixicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
@@ -13,37 +13,33 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
 
-    <title>Responsive Portfolio </title>
+    <title>Aditya Jadhav — Data Analyst</title>
 </head>
 <body>
     <!-- Header -->
     <header class="header" id="header">
         <nav class="nav container">
-            <!-- <a href="#" class="nav__logo">Aditya</a> -->
-            <a href="#" class="nav__logo">Portfolio</a>
+            <a href="#" class="nav__logo">Aditya</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
                         <a href="#home" class="nav__link active-link">Home</a>
                     </li>
-
                     <li>
-                        <a href="#work" class="nav__link">Work</a>
+                        <a href="#work" class="nav__link">Projects</a>
                     </li>
-
                     <li>
-                        <a href="#info" class="nav__link">My Info</a>
+                        <a href="#info" class="nav__link">About</a>
                     </li>
-
                     <li>
-                        <a href="#contact" class="nav__link">Contact Me</a>
+                        <a href="#contact" class="nav__link">Contact</a>
                     </li>
                 </ul>
 
-                <!-- close button -->
+                <!-- Close button -->
                 <div class="nav__close" id="nav-close">
-                    <i class="ri-close-large-line"></i>   
+                    <i class="ri-close-large-line"></i>
                 </div>
             </div>
 
@@ -54,286 +50,251 @@
         </nav>
     </header>
 
+    <!--=============== MAIN ===============-->
+    <main class="main">
 
-     <!--=============== MAIN  ===============-->
-     <main class="main">
-
-        <!--=============== Home  ===============-->
+        <!--=============== HOME ===============-->
         <section class="home section" id="home">
             <div class="home__container container grid">
-                <img src="/img/PngItem_2471474.png" alt="image" class="home__img">
+                <img src="/img/info-perfil.png" alt="Aditya Jadhav" class="home__img">
 
                 <div class="home__data">
                     <h1 class="home__name">Aditya Jadhav</h1>
-                    <h3 class="home__profession">Data Analyst</h3>
+                    <h3 class="home__profession">Data Analyst &amp; Analytics Engineer</h3>
                 </div>
 
                 <a href="#work" class="home__scroll">
                     <div class="home__scroll-box">
                         <i class="ri-arrow-down-line"></i>
                     </div>
-
-                    <span class="home__scroll-text">Recent Works</span>
-               </a>
-            </div>   
-        </section>
-
-        <!--=============== Works ===============-->
-        <section class="work section" id="work">
-            <h2 class="section__title">RECENT WORKS</h2>
-
-            <div class="work__container container grid">
-                <article class="work__link">
-                    <a href="#" target="_blank" class="work__link">
-                        <h2 class="work__title">Project 1</h2>
-                        <p class="work__description">
-                            short description of project that was
-                            carried out in this portfolio.
-                        </p>
-
-                        <img src="/img/work-1.jpg" alt="image" class="work__img">
-
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-                </article>
-
-                <article class="work__link">
-                    <a href="#" target="_blank" class="work__link">
-                        <h2 class="work__title">Project 2</h2>
-                        <p class="work__description">
-                            short description of project that was
-                            carried out in this portfolio.
-                        </p>
-
-                        <img src="/img/work-2.jpg" alt="image" class="work__img">
-
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-                </article>
-
-                <article class="work__link">
-                    <a href="#" target="_blank" class="work__link">
-                        <h2 class="work__title">Project 3</h2>
-                        <p class="work__description">
-                            short description of project that was
-                            carried out in this portfolio.
-                        </p>
-
-                        <img src="/img/work-3.jpg" alt="image" class="work__img">
-
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-                </article>
-
-                <article class="work__link">
-                    <a href="#" target="_blank" class="work__link">
-                        <h2 class="work__title">Project 4</h2>
-                        <p class="work__description">
-                            short description of project that was
-                            carried out in this portfolio.
-                        </p>
-
-                        <img src="/img/work-4.jpg" alt="image" class="work__img">
-
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-                </article>
-
-                <article class="work__link">
-                    <a href="#" target="_blank" class="work__link">
-                        <h2 class="work__title">Project 5</h2>
-                        <p class="work__description">
-                            short description of project that was
-                            carried out in this portfolio.
-                        </p>
-
-                        <img src="/img/work-5.jpg" alt="image" class="work__img">
-
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-                </article>
+                    <span class="home__scroll-text">View Projects</span>
+                </a>
             </div>
         </section>
 
-      
-        
-        <!--=============== Info  ===============-->
+        <!--=============== PROJECTS ===============-->
+        <section class="work section" id="work">
+            <h2 class="section__title">PROJECTS</h2>
+
+            <div class="work__container container grid">
+
+                <article class="work__link">
+                    <a href="https://github.com/adij27/transit-analytics-pipeline" target="_blank" class="work__link">
+                        <h2 class="work__title">NYC Citi Bike Analytics Pipeline</h2>
+                        <p class="work__description">
+                            Production dbt pipeline on BigQuery transforming 61.7M trip records into a partitioned star schema with 16 data quality tests. Live Looker Studio dashboard tracking ridership trends, retention by user type, and peak-hour patterns.
+                        </p>
+                        <img src="/img/work-1.jpg" alt="NYC Citi Bike Pipeline" class="work__img">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <article class="work__link">
+                    <a href="https://github.com/adij27" target="_blank" class="work__link">
+                        <h2 class="work__title">Supply Chain KPI Dashboard</h2>
+                        <p class="work__description">
+                            End-to-end analytics pipeline ingesting production and logistics data into Tableau dashboards tracking 10+ KPIs. Root cause analysis identified 3 bottlenecks — driving a 2.5–3% yield improvement at Olam Food Ingredients.
+                        </p>
+                        <img src="/img/work-2.jpg" alt="Supply Chain Dashboard" class="work__img">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <article class="work__link">
+                    <a href="https://github.com/adij27" target="_blank" class="work__link">
+                        <h2 class="work__title">Text Summarization API</h2>
+                        <p class="work__description">
+                            Production REST API for real-time text summarization using Pegasus/BART transformer models. Optimized inference latency 20% via batching and caching. Built with FastAPI and deployed as a fully documented endpoint.
+                        </p>
+                        <img src="/img/work-3.jpg" alt="Text Summarization API" class="work__img">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!--=============== INFO ===============-->
         <section class="info section" id="info">
-            <h2 class="section__title">MY INFO</h2>
+            <h2 class="section__title">ABOUT ME</h2>
 
             <div class="info__container container grid">
-                <!-- ABOUT -->
-                 <div class="about grid">
-                    <div class="about__content">
-                        <h3 class="info__title">About Me</h3>
-                        <p class="about__description">
-                            Passionate about transforming <b>data into actionable insights</b>.
-                            A glimpse into my background and what ignites my passion for <b>data analysis</b>.
-                        </p>
 
-                        <a href="/pdf/Tailor-Cv.pdf" download="" target="_blank"  class="button about__button">Donwnload CV</a>
+                <!-- ABOUT -->
+                <div class="about grid">
+                    <div class="about__content">
+                        <h3 class="info__title">About</h3>
+                        <p class="about__description">
+                            Data Analyst with 2+ years of experience building <b>end-to-end analytics pipelines</b>, defining KPIs, and turning complex datasets into insights teams act on. Strong SQL, Python, and BigQuery skills — with hands-on experience in <b>dbt, dimensional modeling, and BI dashboard development</b>. Pursuing M.S. Data Analytics at NMSU (GPA 4.0, expected Dec 2026).
+                        </p>
+                        <a href="/pdf/Aditya Jadhav — CV.pdf" download="Aditya-Jadhav-CV.pdf" target="_blank" class="button about__button">Download CV</a>
                     </div>
 
-                    <img src="/img/business-person-futuristic-business-environment.jpg" alt="image" class="about__img">
-                 </div>
+                    <img src="/img/business-person-futuristic-business-environment.jpg" alt="Aditya Jadhav" class="about__img">
+                </div>
 
-                 <!-- EXPERIENCE-->
-                 <div class="experience">
+                <!-- EXPERIENCE -->
+                <div class="experience">
                     <h3 class="info__title">Experience</h3>
 
                     <div class="experience__content grid">
+
                         <div class="experience__data grid">
-                            <h2 class="experience__company">Infosys</h2>
-                            
+                            <h2 class="experience__company">Olam Food Ingredients</h2>
                             <div>
-                                <h3 class="experience__profession">System Engineer</h3>
-                                <span class="experience__date">06/22 - Present</span>
+                                <h3 class="experience__profession">Data Analyst Intern</h3>
+                                <span class="experience__date">May 2025 – Aug 2025</span>
                                 <p class="experience__description">
-                                    Short description of the work you do 
-                                in the company        
-                            </p>
+                                    Built KPI dashboards tracking 10+ supply chain metrics for engineering leadership. Conducted root cause analysis identifying 3 bottlenecks and driving a 2.5–3% yield improvement. Reduced report prep time 30% through automated Python/Tableau pipelines.
+                                </p>
                             </div>
                         </div>
-                    </div>
-                 </div>
 
-                 <!-- SKILLS -->
-                 <div class="skills">
+                        <div class="experience__data grid">
+                            <h2 class="experience__company">New Mexico State University</h2>
+                            <div>
+                                <h3 class="experience__profession">Graduate Research &amp; Teaching Assistant</h3>
+                                <span class="experience__date">Aug 2024 – Present</span>
+                                <p class="experience__description">
+                                    Analyzing student performance and program datasets to support institutional reporting and faculty decision-making. Conducting applied ML research on behavioral pattern detection using classification models. Built automated reporting tools improving tracking accuracy by 25%.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience__data grid">
+                            <h2 class="experience__company">Infosys Pvt. Ltd.</h2>
+                            <div>
+                                <h3 class="experience__profession">Systems Engineer</h3>
+                                <span class="experience__date">Jun 2022 – Aug 2024</span>
+                                <p class="experience__description">
+                                    Optimized SQL production workflows via query refactoring and indexing — reducing processing time 25%. Built Python/Bash automation eliminating 10+ hours of weekly manual effort. Maintained enterprise data systems at 99%+ uptime.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SKILLS -->
+                <div class="skills">
                     <h3 class="info__title">Skills</h3>
 
                     <div class="skills__content grid">
+
                         <div class="skills__box">
-                            <img src="/img/info-html.svg" alt="image" class="skills__img">
-                            <span class="skills__name">HTML</span>
-                        </div>
-                        
-                        <div class="skills__box">
-                            <img src="/img/info-css.svg" alt="image" class="skills__img">
-                            <span class="skills__name">CSS</span>
+                            <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="SQL" class="skills__img">
+                            <span class="skills__name">SQL</span>
                         </div>
 
                         <div class="skills__box">
-                            <img src="/img/info-javascript.svg" alt="image" class="skills__img">
-                            <span class="skills__name">JavaScript</span>
+                            <img src="/img/info-python.svg" alt="Python" class="skills__img">
+                            <span class="skills__name">Python</span>
                         </div>
 
                         <div class="skills__box">
-                            <img src="/img/info-react.svg" alt="image" class="skills__img">
-                            <span class="skills__name">React</span>
+                            <img src="https://cdn.simpleicons.org/googlebigquery/669DF6" alt="BigQuery" class="skills__img">
+                            <span class="skills__name">BigQuery</span>
                         </div>
 
                         <div class="skills__box">
-                            <img src="/img/info-git.svg" alt="image" class="skills__img">
+                            <img src="/img/info-dbt.svg" alt="dbt" class="skills__img">
+                            <span class="skills__name">dbt</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="/img/info-tableau.svg" alt="Tableau" class="skills__img">
+                            <span class="skills__name">Tableau</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="/img/info-powerbi.svg" alt="Power BI" class="skills__img">
+                            <span class="skills__name">Power BI</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="https://cdn.simpleicons.org/pandas/150458" alt="Pandas" class="skills__img">
+                            <span class="skills__name">Pandas</span>
+                        </div>
+
+                        <div class="skills__box">
+                            <img src="/img/info-git.svg" alt="Git" class="skills__img">
                             <span class="skills__name">Git</span>
                         </div>
 
                         <div class="skills__box">
-                            <img src="/img/info-github.svg" alt="image" class="skills__img">
-                            <span class="skills__name">GirHub</span>
+                            <img src="/img/info-github.svg" alt="GitHub" class="skills__img">
+                            <span class="skills__name">GitHub</span>
                         </div>
 
-                        <div class="skills__box">
-                            <img src="/img/info-tailwind-css.svg" alt="image" class="skills__img">
-                            <span class="skills__name">Tailwind</span>
-                        </div>
-
-                        <div class="skills__box">
-                            <img src="/img/info-sass.svg" alt="image" class="skills__img">
-                            <span class="skills__name">Sass</span>
-                        </div>
-
-                        <div class="skills__box">
-                            <img src="/img/info-figma.svg" alt="image" class="skills__img">
-                            <span class="skills__name">Figma</span>
-                        </div>
                     </div>
-                 </div>
+                </div>
+
             </div>
         </section>
 
-        <!--=============== Contact  ===============-->
+        <!--=============== CONTACT ===============-->
         <section class="contact section" id="contact">
             <h2 class="section__title">CONTACT ME</h2>
 
             <div class="contact__container container grid">
                 <form action="" class="contact__form grid" id="contact-form">
                     <div class="contact__group grid">
-                        <input type="text" name="user_name" placeholder="Names" required class="contact__input">
-                        <input type="email" name="user_email" placeholder="Email" required class="contact__input">
+                        <input type="text" name="user_name" placeholder="Your Name" required class="contact__input">
+                        <input type="email" name="user_email" placeholder="Your Email" required class="contact__input">
                     </div>
 
-                    <textarea name="user_message" placeholder="Message" class="contact__input contact__area"></textarea>
+                    <textarea name="user_message" placeholder="Your Message" class="contact__input contact__area"></textarea>
 
                     <button type="submit" class="button contact__button">Send Message</button>
 
-                    <p class="contact__message" id="contact-message">Message</p>
+                    <p class="contact__message" id="contact-message"></p>
                 </form>
 
                 <div class="contact__social grid">
-                    <a href="https://www.linkdin.com/" target="_blank" class="contact__social-link">
+                    <a href="https://linkedin.com/in/aditya-jadhav-547b58197" target="_blank" class="contact__social-link">
                         <i class="ri-linkedin-fill"></i>
-                        <span>LinkeIn</span>
+                        <span>LinkedIn</span>
                     </a>
 
-                    <a href="https://www.instagram.com/" target="_blank" class="contact__social-link">
-                        <i class="ri-instagram-line"></i>
-                        <span>Instagram</span>
+                    <a href="https://github.com/adij27" target="_blank" class="contact__social-link">
+                        <i class="ri-github-fill"></i>
+                        <span>GitHub</span>
                     </a>
 
-                    <a href="https://www.twitter.com/" target="_blank" class="contact__social-link">
-                        <i class="ri-twitter-x-line"></i>
-                        <span>Twitter</span>
+                    <a href="mailto:aditya27@nmsu.edu" class="contact__social-link">
+                        <i class="ri-mail-line"></i>
+                        <span>Email</span>
                     </a>
                 </div>
             </div>
         </section>
-     </main>
 
-        <!--=============== FOOTER ===============-->
-        <footer class="footer">
-            <div class="footer__container container grid">
-                <ul class="footer__links">
-                    <li>
-                        <a href="#home" class="footer__link">Home</a>
-                    </li>
+    </main>
 
-                    <li>
-                        <a href="#work" class="footer__link">Work</a>
-                    </li>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li><a href="#home" class="footer__link">Home</a></li>
+                <li><a href="#work" class="footer__link">Projects</a></li>
+                <li><a href="#info" class="footer__link">About</a></li>
+            </ul>
+            <span class="footer__copy">&#169; 2026 Aditya Jadhav</span>
+        </div>
+    </footer>
 
-                    <li>
-                        <a href="#info" class="footer__link">Info</a>
-                    </li>
-                </ul>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
-                <span class="footer__copy">
-                    &#169; All Rights Reserved
-                </span>
-            </div>
-        </footer>
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="/js/scrollreveal.min.js"></script>
 
-        <!--=============== SCROLL UP ===============-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line"></i>
-        </a>
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-
-        <!--=============== SCROLL REVEAL ===============-->
-        <script src="/js/scrollreveal.min.js"></script>
-
-
-        <!--=============== EMAIL JS ===============-->
-
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-
-        
-
-
-
-
-
-     <!--=============== MAIN JS ===============-->
-     <script src="/script.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="/script.js"></script>
 </body>
 </html>

@@ -835,7 +835,7 @@ img {
 
     .contact__container{
         grid-template-columns: 580px;
-        margin-left: 490px;    
+        justify-content: center;   
     }
 
     .contact__group{
