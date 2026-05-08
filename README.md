@@ -43,4 +43,4 @@ npm run dev
 
 - Email: aditya27@nmsu.edu
 - LinkedIn: [linkedin.com/in/aditya-jadhav-547b58197](https://linkedin.com/in/aditya-jadhav-547b58197)
-- GitHub: [github.com/adig27](https://github.com/adig27)
+- GitHub: [github.com/adig27](https://github.com/adij27)

@@ -99,6 +99,7 @@ const scrollActive = () => {
 };
 
 window.addEventListener(`scroll`, scrollActive);
+scrollActive();
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
